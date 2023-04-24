@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int Trofimov()
 {
 	int num = 0;
 	int result;
