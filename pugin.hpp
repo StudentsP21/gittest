@@ -1,4 +1,4 @@
 int pugin(int number){
-    return number % 10 < 5?
+    return number % 10;
     
 }
