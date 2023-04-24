@@ -1,15 +1,2 @@
 #include <iostream>
-
-using namespace std;
-
-int Trofimov()
-{
-	int num = 0;
-	int result;
-	cout << "Enter number: ";
-	cin >> num;
-	result = num + 2 / 2;
-	cout << result;
-
-	return 0;
-}
+void Trofimov(size_t num, size_t res){res = num / 2 * 3;}int main(){int num = 10;int res;return 0;}
