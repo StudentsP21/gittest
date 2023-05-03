@@ -1,0 +1,46 @@
+1)int(челые числа), float(с плавающей точкой), bool, bouble, char(знак), long int, unsigned,short int, long long,unsigned short,long double,unsigned char.
+2)size_t,uint16_t(2 байта со знаком),uint64_t(long long int,uint32_t(4 байта со знаком long int),uint8_t(1 байт со знаком),int* указатель,int** указатель на указатель u это unsigneds.
+3)литералы это значения которые присваивают переменным , буквальные значения
+4)
+bool is_leap_year(int year) {
+	return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+}
+5)for используют в том случаи если ты знаешь сколько будет итераций (проходов цикла)
+while когда не знаешь количество итераций (проходов цикла), иклом for удобнее перебирать массив темболее мы с массивами часто работаем,и обычно он используется когда вы заранее знаете численность итераций.
+6)#include <iostream>
+
+
+int main()  {
+    int array[100];
+
+    for (int i = 0; i < 100; i++)
+    {
+        array[i] = i + 1;
+        std::cout << array[i] << " ";
+    }
+    std::cout << "\n";
+    
+    return 0;
+}
+7)#include <iostream>
+
+template <typename T>
+void print_arr2d(T arr2d, size_t rows,size_t cols) {
+	for (size_t i = 0; i < rows; ++i) {
+		for (size_t j = 0; j < cols; ++j) {
+			std::cout << arr2d[i][j] << ' ';
+		}
+		std::cout << '\n';
+	}
+	
+}
+int main() {
+	int cols = 3;
+	int rows = 3;
+	int** array2d = new int* [cols * rows];
+	array2d[0] = new int[3] {1, 2, 3};
+	array2d[1] = new int[3] {4, 5, 6};
+	array2d[2] = new int[3] {7, 8, 9};
+	print_arr2d(array2d, 3, 3);
+}
+8) тип,название,аргументы.тип нужен для того что будет выдавать функция , название должно подходть задаче,аргуманты это то что принимает функция.
